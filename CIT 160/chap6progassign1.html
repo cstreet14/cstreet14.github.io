@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script type="text/javascript">
+            function absolute() {
+                var iLikeTurtles = parseInt(document.getElementById('num1').value);
+                var iLoveFish = parseInt(document.getElementById('fish').value);
+
+                var answer = iLikeTurtles - iLoveFish;
+                if(answer <0){
+                         answer*=-1;
+                }
+                document.getElementById('output').innerHTML = answer;
+            }
+
+
+        </script>
+    </head>
+
+    <body>
+        Please enter a number<input type='text' id='num1'><br>
+        Please enter a number<input type='text' id='fish'><br>
+        <button type='button' onClick='absolute()'>Click Me</button>
+        <div id='output'></div>
+    </body>
+
+</html>

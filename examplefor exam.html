@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script type="text/javascript">
+            /*
+        Input: acres
+        Processing: convert acres to sqft
+        Output: sqft
+        */
+            function computeSize() {
+                //Input
+                var acre = document.getElementById('acres').value;
+                //Processing
+                acre = parseFloat(acre);
+                var sqft = acre * 43560;
+                //Output
+                document.getElementById('sqft').innerHTML = sqft;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>How many Square Feet?</h1>
+        Acres <input type="text" id="acres"><br>
+        <button type="button" onClick="computeSize() ">ComputeSize</button><br>
+        Size (square feet) <div id="sqft" ></div>
+
+
+
+
+    </body>

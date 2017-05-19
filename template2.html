@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Applied Scripture</title>
+<script type="text/javascript">
+/*
+Input: distance in meters
+Processing: convert meters to miles, feet, and inches
+Output: miles, feet, and inches
+*/
+function convert() {
+        //Input
+        var meter = document.getElementById('meter').value;
+        //Processing
+        meter = parseFloat(meter);
+        var mile = meter/1609.34;
+        var foot = meter/0.3048;
+        var inch = meter/0.0254;
+        //Output
+        var output = "Miles: " + mile.toFixed(3) + "<br>Feet: " + foot.toFixed(3) + "<br>Inches: " + inch.toFixed(3);
+        document.getElementById('output').innerHTML = output;
+
+
+
+
+}
+</script>
+</head>
+
+<body>
+    Please enter your distance in meters: <input type='text' id='meter'><br>
+    <button type= 'button' onClick='convert()'>Click Me!!!</button><br>
+    <div id='output'></div>
+</body>
+
+</html>

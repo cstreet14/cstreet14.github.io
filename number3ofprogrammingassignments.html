@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Applied Scripture</title>
+    <script type="text/javascript">
+        /*
+            Input: radius, height
+            Processing: calculate volume
+            Output: volume
+        */
+        function tinCanVolume() {
+            var radius = parseFloat(document.getElementById('radius').value);
+            var height = parseFloat(document.getElementById('height').value);
+
+            var volume = Math.PI * radius * radius * height;
+
+            var output = "The volume is " + volume;
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+</head>
+
+<body>
+Please enter the radius: <input type='text' id='radius'><br>
+Please enter the height: <input type='text' id='height'><br>
+<button type='button' onClick='tinCanVolume()'>Find volume</button>
+<div id='output'></div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Applied Scripture</title>
+    <script type="text/javascript">
+        /*
+        Input: quarts
+        Processing: convert quarts to liters
+        Output: liters
+        */
+        function convert() {
+            //Input
+            var quart = document.getElementById('quart').value;
+            //Processing
+            quart = parseFloat(quart);
+            var liter = quart / 1.05669;
+            //Output
+            var output = "Liters: " + liter;
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+</head>
+
+<body>
+    Please enter your distance in quarts: <input type='text' id='quart'><br>
+    <button type='button' onClick='convert()'>Click Me!!!</button><br>
+    <div id='output'></div>
+</body>
+
+</html>

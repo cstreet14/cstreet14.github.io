@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>How Many Acres?</title>
+        <script type="text/javascript">
+            /*
+        Input: width and length of parcel in feet
+        Processing: convert feet to acres
+        Output: acres
+        */
+            function computeSize() {
+                //Input
+                var width = document.getElementById('width').value;
+                var length = document.getElementById('length').value;
+                //Processing
+                width = parseFloat(width);
+                length = parseFloat(length);
+                var acre = (width) * (length) / 43560;
+                //Output
+                document.getElementById('acre').innerHTML = acre;
+            }
+        </script>
+    </head>
+
+    <body>
+        <h1>How Many Acres?</h1>
+        Width (feet) <input type="text" id="width"><br>
+        Length (feet) <input type="text" id="length"><br>
+        <button type="button" onclick="computeSize()">Acres</button><br>
+        Size (acres) <div id="acre"></div>
+    </body>
+</html>

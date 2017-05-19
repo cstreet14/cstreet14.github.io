@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Applied Scripture</title>
+    <script type="text/javascript">
+        /*
+                Input: beginning Odometer, ending Odometer, and number of gallons of gas used
+                Processing: subtract beginning odometer from ending odometer and divide mileage by number of gallons of gas used
+                Output: miles per gallon
+                */
+        function convert() {
+            //Input
+            var begin = document.getElementById("begin").value;
+            var end = document.getElementById("end").value;
+            var gallon = document.getElementBy Id("gallon").value;
+            //Processing
+            begin = parseFloat(begin);
+            end = parseFloat(end);
+            gallon = parseFloat(gallon);
+            var mile = (end - begin) / gallon;
+            //Output
+            var output = "Miles per gallon: " + miles per gallon;
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+</head>
+
+<body>
+    Please enter the reading of your beginning odometer: <input type='text' id='begin'><br> Please enter the reading of your ending odometer: <input type='text' id='end'><br> Please enter the number of gallons used: <input type='text' id='gallon'><br>
+    <button type='button' onClick='convert()'>Click Me!!!</button><br>
+    <div id='output'></div>
+</body>
+
+</html>
