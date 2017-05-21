@@ -1,30 +1,33 @@
 <!DOCTYPE HTML>
 <html lang="en-us">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Applied Scripture</title>
-        <script type="text/javascript">
-            function shoes() {
-                var weather = parseInt(document.getElementById('weather').value);
-                var footwear = parseInt(document.getElementById('footwear').value);
+<head>
+    <meta charset="utf-8">
+    <title>Applied Scripture</title>
+    <script type="text/javascript">
+        function shoes() {
+            var weather = document.getElementById('weather').value;
 
-                var answer {
-                if(hot){
-                    answer*=-1;
+            var answer {
+                if (hot) {
+                    answer = sandals;
+                }
+                else (rain) {
+                    answer = galoshes;
+                }
+                else (snow) {
+                    answer = boots;
                 }
                 document.getElementById('output').innerHTML = answer;
             }
+        }
+    </script>
+</head>
 
-
-        </script>
-    </head>
-
-    <body>
-        Please enter a number<input type='text' id='weather'><br>
-        Please enter a number<input type='text' id='footwear'><br>
-        <button type='button' onClick='shoes()'>Click Me</button>
-        <div id='output'></div>
-    </body>
+<body>
+    Please enter your weather: <input type='text' id='weather'><br>
+    <button type='button' onClick='shoes()'>Click Me</button>
+    <div id='output'></div>
+</body>
 
 </html>
