@@ -34,9 +34,14 @@ main {
 },
 figcaption,
 figure {
-    display: block;   /* just in case we have any older browsers that don't recognize the HTML5 semantic elements */
+    display: block;
 }
 
+@media (min-width: 550px) {
+    body {
+        background-color: lime;
+    }
+}
 body {
     display: flex;
     flex-flow: column;
@@ -48,7 +53,7 @@ body {
     background-color: salmon;
 }
 
-.hide {
+.hide-small {
     display: none;
 }
 

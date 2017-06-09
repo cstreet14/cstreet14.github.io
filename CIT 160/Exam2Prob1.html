@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Exam 2 Problem 4</title>
+        <script type="text/javascript">
+            function fifteen() {
+                var x = document.getElementById(' x ').value;
+                var y = document.getElementById(' y ').value;
+                x = parseInt(x);
+                y = parseInt(y);
+                var message = 'False';
+                if (x > 15 || y > 15 ||(x+y == 100) {
+                    message = 'True';
+                }
+                document.getElementById('output').innerHTML = message;
+            }
+        </script>
+    </head>
+
+    <body>
+        Enter a sentence: <input type='text' id='word'><br>
+        <button type='button' onclick='fifteen()'>Hello</button><br>
+        <div id='output'></div>
+    </body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script type="text/javascript">
+            /* Defining Table
+         * Input: Student's Name and number of credits completed
+         * Processing: Compute year in school according to number of credits earned
+         * Output: Student's name and year in school
+         */
+            function academicYear() {
+
+                //input
+
+                var name = document.getElementById('nameInputBox').value;
+                var credits = parseInt (document.getElementById('credits').value);
+
+                //processing
+                if(credits >= 0 && credits < 30){
+                    message = name + 'Freshman';
+                }
+                else if(credits >= 30 && credits < 60){
+                    message = name + 'Sophomore';
+                }
+                else if(credits >= 60 && credits < 90){
+                    message = name + 'Junior';
+                }
+                else if(credits >= 90){
+                    message = name + 'Senior';
+                }
+
+
+                //output
+
+                document.getElementById('output').innerHTML = message;
+            }
+
+        </script>
+    </head>
+
+    <body>
+        Please enter your name: <input type='text' id='nameInputBox'><br>
+        Please enter the number of credits you have completed: <input type='text' id='credits'><br>
+        <button type='button' onclick='academicYear()'>Click</button>
+        <div id='output'></div>
+    </body>
+
+</html>

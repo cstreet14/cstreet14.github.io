@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script type="text/javascript">
+            function go() {
+                var hN = document.getElementById('houseNumber').value;
+                var sN = document.getElementById('streetName').value;
+                var suN = document.getElementById('suiteNumber').value;
+                var output = hN + "" + sN + "" + suN;
+                    }
+                    document.getElementById('location').innerHTML = o;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        Please enter your weather: <input type='text' id='weather'><br>
+        <button type='button' onClick='go()'>Click Me</button>
+        <div id='output'></div>
+    </body>
+
+</html>

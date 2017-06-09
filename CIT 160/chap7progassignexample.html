@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Subtotal</title>
+        <script type="text/javascript">
+            /* Defining Table
+         * Input: subtotal
+         * Processing: Calculate discount for Tue/Wed if >50. Add sales tax
+         * Output: output total
+         */
+            function calculateTotal(){
+
+            //input
+            var subtotal = parseFloat(document.getElementById('subtotal').value);
+
+            var dayOfWeek = new Date().getDay();
+            dayOfWeek = 2;
+
+            //processing
+            if(subtotal > 50 && (dayOfWeek == 2||dayOfWeek==3)){
+                    subtotal*=.9;
+               }
+               subtotal*=1.06;
+
+               //output
+            document.getElementById('output').innerHTML = subtotal.toFixed(2);
+
+        }
+
+        </script>
+    </head>
+
+    <body>
+        Please enter your subtotal: <input type="text" id="subtotal"><br>
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+        <div id="output"></div>
+    </body>
+
+</html>

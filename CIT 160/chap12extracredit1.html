@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Chapter 12 String Extra Credit</title>
+        <script type="text/javascript">
+            function stuff() {
+
+                var sentence = document.getElementById('word').value;
+                var t= sentence.split(' ');
+                var output= t[0] + ' ' + t[1] + ' ' + t[2];
+
+
+
+                document.getElementById('output').innerHTML = output;
+            }
+        </script>
+    </head>
+
+    <body>
+        Enter a sentence: <input type='text' id='word' style='width:500px'><br>
+        <button type='button' onclick='stuff()'>Hello</button><br>
+        <div id='output'></div>
+    </body>
+
+</html>
