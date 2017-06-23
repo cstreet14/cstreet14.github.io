@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script type="text/javascript">
+        function doInputOutput(){
+            var t = document.getElementById('t').value;
+            t = parseFloat(t);
+            var h = document.getElementById('h').value;
+            h = parseFloat(h);
+            var i = heatIndex(t,h);
+            document.getElementById('output').innerHTML = i;
+        }
+        function heatIndex(tempF, humid){
+            var i = -42.379 + 2.04901523*tempF + 10.14333127*humid - 0.22475541*tempF*humid - 0.00683783*tempF*tempF - 0.05481717*humid*humid + 0.00122874*tempF*tempF*humid + 0.00085282*tempF*humid*humid - 0.00000199*tempF*tempF*humid*humid;
+            return i;
+        }
+
+        </script>
+    </head>
+
+    <body>
+        Temperature:<input type='text' id='t'><br>
+        Relative Humidity:<input type='text' id='h'><br>
+        <button type='button' onclick='doInputOutput()'>Celsius</button>
+        <div id='output'></div>
+    </body>
+
+</html>

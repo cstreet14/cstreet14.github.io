@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script type="text/javascript">
+            function add(x,y) {
+                var sum = x+y;
+                return sum;
+            }
+            function subtract(x,y){
+                var diff = x-y;
+                return diff;
+            }
+            function fancy(x,y,z){
+                var s = add(x,y)
+                var d = subtract(s,z)
+                return d;
+
+            }
+            function superFancy(){
+                var a = parseInt(document.getElementById('input1').value);
+                var b = parseInt(document.getElementById('input2').value);
+                var c = parseInt(document.getElementById('input3').value);
+
+                var d = fancy(a,b,c);
+                document.getElementById('output').innerHTML = d;
+
+            }
+
+            var j = add(8,5);
+            var k = add(j,9);
+            var z = add(j,k);
+
+            window.alert(j+" "+k+" "+z);
+
+            var x = subtract(45,40);
+            window.alert(x);
+
+            var t = fancy(5,8,2);
+            window.alert(t);
+
+        </script>
+    </head>
+
+    <body>
+        <input type='text' id='input1'><br>
+        <input type='text' id='input2'><br>
+        <input type='text' id='input3'><br>
+        <button type='button' onClick='superFancy()'>Click ME!!!!</button>
+        <div id='output'></div>
+    </body>
+
+
+</html>

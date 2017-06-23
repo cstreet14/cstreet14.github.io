@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Chapter 12 String Extra Credit</title>
+        <script type="text/javascript">
+            function makeOneHundred() {
+                var x = document.getElementById(' x ').value;
+                var y = document.getElementById(' y ').value;
+                x = parseInt(x);
+                y = parseInt(y);
+                var message = 'False';
+                if (x == 100 || y == 100 ||(x+y == 100) || (x*y == 100) || (x-y == 100) || (y-x ++ 100)) {
+                    message = 'True';
+                }
+                document.getElementById('output').innerHTML = message;
+            }
+        </script>
+    </head>
+
+    <body>
+        Enter a sentence: <input type='text' id='word' style='width:500px'><br>
+        <button type='button' onclick='stuff()'>Hello</button><br>
+        <div id='output'></div>
+    </body>
+
+</html>

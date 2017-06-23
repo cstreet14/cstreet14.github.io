@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script type="text/javascript">
+        function doInputOutput(){
+            var f = document.getElementById('f').value;
+            f = parseFloat(f);
+            var c = fahrToCels(f);
+            document.getElementById('output').innerHTML = c;
+        }
+        function fahrToCels(fahr){
+            var c = (fahr-32)*(5/9);
+            return c;
+        }
+        </script>
+    </head>
+
+    <body>
+        Fahrenheit:<input type='text' id='f'><br>
+        <button type='button' onclick='doInputOutput()'>Celsius</button>
+        <div id='output'></div>
+    </body>
+
+</html>
