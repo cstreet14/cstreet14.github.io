@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 * {
     box-sizing: border-box;    /* changes width property to total width instead of content width */
 
@@ -6,7 +7,10 @@
 article,
 aside,
 footer,
-header {}
+header {
+    display: flex;
+    text-align: left;
+}
 
 title h1 + h1 {
     text-align: right;
@@ -14,18 +18,6 @@ title h1 + h1 {
 }
 
 
-
-nav
-ul {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 section,
 main {
     display: flex;
@@ -38,12 +30,23 @@ figure {
 }
 body{
    text-align: center;
+    background-color: #E6E6E6;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    color: #FF8552;
+}
+p{
+    color: #39393A;
+}
+h1{
+    color: #297373;
 }
 
 /*large screen size*/
 @media (min-width: 550px) {
-    body {
-        background-color: lime;
+    display: flex;
+    background-color: lime;
     }
 }
 body {
@@ -56,6 +59,13 @@ body {
     padding: 0;  /* ditto for padding  */
     background-color: lightblue;
 }
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+}
 .body-font {
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -65,9 +75,25 @@ body {
 }
 
 .left {
-    order: 2;
+    display: flex;
+    order: 1;
+    padding: 100px;
+}
+.middle{
+    padding: 100px;
+}
+.right{
+    padding: 100px;
 }
 
 h4 {
     visibility: hidden;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+    padding: 30px;
 }
