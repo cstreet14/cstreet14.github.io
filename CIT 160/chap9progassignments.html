@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script type="text/javascript">
+            function stuff() {
+
+                var total < 1500;
+                var output = "1";
+                for(var i=0;i<=100;i++){
+                    total += i;
+                    output += "," + i;
+
+                }
+
+                document.getElementById('output').innerHTML = total+ "<br>" + output;
+            }
+        </script>
+    </head>
+
+    <body>
+        <button type="button" onclick="stuff()">Hello</button>
+        <div id="output"></div>
+    </body>
+
+</html>

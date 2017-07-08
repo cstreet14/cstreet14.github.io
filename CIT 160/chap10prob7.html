@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Applied Scripture</title>
+        <script type="text/javascript">
+            function rotateRight(list) {
+                var temp = list[0]
+                for(var i=1;i<list.length;i++){
+                    list[i-1] = list[i];
+                }
+                list[list.length-1] = temp;
+
+            }
+            function rotateRight2(list){
+            list.unshift(list.pop());
+            }
+
+            function rotateRight3(list){
+                var temp = list.pop();
+                list.reverse();
+                list.push(temp);
+                list.reverse();
+            }
+
+            var test = [2, 8, 6, 5, 3];
+            rotateRight2(test);
+            window.alert(test);
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>

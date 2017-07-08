@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Program</title>
+        <script type="text/javascript">
+            function multiply(list, multiplier) {
+                var answer = new Array(list.length);
+                for(var i = 0; i<list.length; i++){
+                        answer[i] = list[i] * multiplier;
+                }
+                return answer;
+            }
+            var test = [6, 7, 4, 8, 2];
+            var x = multiply(test,3);
+            window.alert(x);
+
+            var test = [6, 7, 4, 0, 8, 2];
+            var x = multiply(test,105);
+            window.alert(x);
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+</html>
