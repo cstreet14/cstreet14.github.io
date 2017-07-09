@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+* {
+    box-sizing: border-box;    /* changes width property to total width instead of content width */
+
+}
+
+article,
+aside,
+footer,
+header {
+    display: flex;
+    text-align: left;
+}
+
+title h1 + h1 {
+    text-align: right;
+    margin-top: -.7em;
+}
+
+
+section,
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+},
+figcaption,
+figure {
+    display: block;
+}
+body{
+    text-align: center;
+    background-color: #E6E6E6;
+    font-family: 'Montserrat', sans-serif;
+}
+h2{
+    color: #FF8552;
+}
+p{
+    color: #39393A;
+}
+h1{
+    color: #297373;
+}
+
+/*large screen size*/
+@media (min-width: 550px) {
+    display: flex;
+    background-color: lime;
+}
+}
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+
+    order: -1;
+    margin: 2em;
+    padding: 0;  /* ditto for padding  */
+    background-color: lightblue;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    width: 100%;
+}
+.body-font {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.hide-small {
+    display: none;
+}
+
+.left {
+    display: flex;
+    order: 1;
+    padding: 100px;
+}
+.middle{
+    padding: 100px;
+}
+.right{
+    padding: 100px;
+}
+
+h4 {
+    visibility: hidden;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    list-style: none;
+    padding: 30px;
+}
