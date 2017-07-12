@@ -70,25 +70,6 @@ main{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.hide-small {
-    display: none;
-}
-
-.left {
-    display: flex;
-    order: 1;
-    padding: 100px;
-}
-.middle{
-    padding: 100px;
-}
-.right{
-    padding: 100px;
-}
-
-h4 {
-    visibility: hidden;
-}
 nav ul{
     display: flex;
     flex-direction: row;
