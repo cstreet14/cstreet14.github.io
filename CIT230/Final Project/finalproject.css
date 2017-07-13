@@ -26,3 +26,14 @@ nav ul li a {
     display: inline-block;
     padding: 20px;
 }
+.concussion-hit {
+    display: flex;
+    justify-content: center;
+}
+.concussion {
+    text-align: center;
+}
+.first-title {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
