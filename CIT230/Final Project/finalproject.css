@@ -30,10 +30,35 @@ nav ul li a {
     display: flex;
     justify-content: center;
 }
-.concussion {
+.home {
     text-align: center;
 }
 .first-title {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
+}
+li {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+.testimonials-title {
+    text-align: center;
+}
+ul {
+    padding-left: 0;
+}
+p {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.home-title {
+    text-align: center;
+}
+.test-main-title {
+    text-align: center;
+}
+.concussions-bargraph {
+    display: flex;
+    justify-content: flex-start;
 }

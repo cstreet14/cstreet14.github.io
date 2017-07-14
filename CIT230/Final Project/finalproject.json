@@ -1,0 +1,40 @@
+{
+    "doctor":[
+        {
+            "name": "Dr. James P. Kelly",
+            "quote": "On the overall spectrum of head trauma, football cases are mild for the most part. Serious injuries can and do happen, but most resolve themselves within 7 to 10 days with no lasting effects. The major concern is Second Impact Syndrome, when a player goes back too early and gets hit again. This can be very dangerous and lead to massive swelling of the brain."
+        },
+        {
+            "name": "Dr. Kevin Guskiewicz",
+            "quote": "A study of 2,500 retired NFL players found that those who had at least three concussions during their careers had triple the risk of clinical depression as those who had no concussions. Those who recalled one or two concussions were 1 1/2 times more likely to be diagnosed with depression."
+        },
+        {
+            "name": "Dr. Robert Cantu",
+            "quote": "The accumulation of many hits may be more significant than a few big ones. We have seen a number of hits over 100 g that we expected would lead to concussion and didn’t. And there are lesser hits, in the 50 to 60g range, that led to players being taken out of the game. We believe that in many of these cases the players probably had a minor concussion from an earlier hit and played through it, creating the perfect storm where a lesser hit has a much greater effect."
+        }],
+    "player": [
+        {
+            "name": "Liffort Hobley",
+            "quote": "I probably would have chosen a different sport. I was talented in several sports. I probably could've been a [heck] of a baseball player so yeah, I probably would have, actually, chosen something else. And I'll tell you now: I have an 11-year-old son and I'm definitely choosing a different life for him. He will not play football.",
+            "career": "Years played in the NFL: 1985-1993"
+        },
+        {
+            "name": "Eric Unverzagt",
+            "quote": "I definitely see, and my wife sees, a huge difference in my behavior over the past five years. I'm definitely more anxious. I've never been an anxious guy. I'm definitely more depressed, definitely more worried about stuff. One of my major symptoms is definitely I'm very anxious and I'm very forgetful. And I know I'm only 40 years old, but I shouldn't have such bad short-term memory loss. My wife had to point it out to me. I didn't even realize it. She even said, 'You do have symptoms. You do have neurological symptoms.'",
+            "career": "Years played in the NFL: 1996-1997"
+        },
+        {
+            "name": "Doug Beaudoin",
+            "quote": "I feel pretty fortunate when I look around at 59 and see the damage that a lot of my peers are going through and have gone through over the last 10, 15, 20 years. Am I concerned? Hell yes. You know, your decision-making process is sketchy is best. My memory is not good. I do feel depressed more often than I should. So yeah, I'm really concerned. I did have an MRI where they came back and basically said they didn't see any problems with the MRI, but I guarantee you I have CTE. Unfortunately we're not going to know it until I'm dead.",
+            "career": "Years played in the NFL: 1976-1981"
+        }
+    ],
+
+
+    "home": [
+        {
+            "name": "Dr. James P. Kelly",
+            "quote": "How do I define concussion? It’s an alteration of mental status brought on by a biomechanical force that may or may not include unconsciousness. Often there is no unconsciousness. In the spectrum of concussion, amnesia is worse than confusion, unconsciousness is worse than amnesia."
+        }
+    ]
+}
