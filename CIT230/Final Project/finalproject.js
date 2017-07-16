@@ -63,3 +63,23 @@ function homepage(){
         });
     });
 }
+function impact(){
+    getJSON("finalproject.json").then(function(data) {
+        console.log('test');
+        console.log(data);
+        var impactElement = document.getElementById("impact");
+        data.impact.forEach(function(val){
+            console.log(val);
+            impactElement.innerHTML = '';
+            var listItem = document.createElement('li');
+            var name = document.createElement('h2');
+            var quote = document.createElement('p');
+            name.innerHTML = val.name;
+            quote.innerHTML = '"'  + val.quote + '"';
+            listItem.appendChild(name);
+            listItem.appendChild(quote);
+            homepageElement.appendChild(listItem);
+        });
+    });
+}
+

@@ -60,5 +60,20 @@ p {
 }
 .concussions-bargraph {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+}
+.player-speaking {
+    display: flex;
+    justify-content: center;
+}
+.Brain-in-Helmet {
+    display: flex;flex
+    justify-content: center;
+}
+.impact-title {
+    text-align: center;
+}
+.concussion-impact {
+    display: flex;
+    justify-content: center;
 }

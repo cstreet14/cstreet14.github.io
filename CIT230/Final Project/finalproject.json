@@ -27,14 +27,23 @@
             "name": "Doug Beaudoin",
             "quote": "I feel pretty fortunate when I look around at 59 and see the damage that a lot of my peers are going through and have gone through over the last 10, 15, 20 years. Am I concerned? Hell yes. You know, your decision-making process is sketchy is best. My memory is not good. I do feel depressed more often than I should. So yeah, I'm really concerned. I did have an MRI where they came back and basically said they didn't see any problems with the MRI, but I guarantee you I have CTE. Unfortunately we're not going to know it until I'm dead.",
             "career": "Years played in the NFL: 1976-1981"
-        }
-    ],
+        }],
 
 
     "home": [
         {
             "name": "Dr. James P. Kelly",
             "quote": "How do I define concussion? It’s an alteration of mental status brought on by a biomechanical force that may or may not include unconsciousness. Often there is no unconsciousness. In the spectrum of concussion, amnesia is worse than confusion, unconsciousness is worse than amnesia."
+        }],
+
+    "impact": [
+        {
+            "concussion": "Concussion: A traumatic brain injury caused by abrupt impact that changes the way your brain functions.",
+            "implications": "Such impact can lead to bruising and swelling of the brain, rupturing of blood vessels, and injury to nerves, thereby causing a concussion.",
+            "makeup": "The brain is made up of soft tissue and is protected by blood and spinal fluid. When the skull is jolted too fast or is impacted by something, the brain shifts and hits against the skull.",
+            "care": "Moat concussions are mild and can be treated with appropriate care. However, if left untreated, it can result in death."
         }
+
     ]
+
 }
