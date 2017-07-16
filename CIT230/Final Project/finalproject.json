@@ -42,8 +42,11 @@
             "implications": "Such impact can lead to bruising and swelling of the brain, rupturing of blood vessels, and injury to nerves, thereby causing a concussion.",
             "makeup": "The brain is made up of soft tissue and is protected by blood and spinal fluid. When the skull is jolted too fast or is impacted by something, the brain shifts and hits against the skull.",
             "care": "Moat concussions are mild and can be treated with appropriate care. However, if left untreated, it can result in death."
-        }
+        }],
 
-    ]
+    "statistics": [
+        {
+            "history": "The National Football League implemented its current concussion protocol just prior to the 2009 season. The purpose of this protocol is to provide all NFL players with a safe and accurate measurement of what the current condition of their brain is and enables doctors to better understand what a certain players' diagnosis should be. The protocol is comprised of a series of tests that purposely challenge a player's brain to see what it's overall functionality is. As can be seen on the graphic above, there was a significant increase in the number of concussions sustained throughout the NFL over the next three years. Fortunately, however, those numbers have decreased each year since the 2012 season."
+        }],
 
 }

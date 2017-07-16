@@ -66,8 +66,8 @@ p {
     display: flex;
     justify-content: center;
 }
-.Brain-in-Helmet {
-    display: flex;flex
+.brain-in-helmet {
+    display: flex;
     justify-content: center;
 }
 .impact-title {
@@ -75,5 +75,8 @@ p {
 }
 .concussion-impact {
     display: flex;
+    justify-content: center;
+}
+.bottom-nav-bar {
     justify-content: center;
 }
