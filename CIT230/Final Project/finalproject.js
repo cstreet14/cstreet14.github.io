@@ -43,7 +43,6 @@ function concussions(){
 
     });
 };
-
 function homepage(){
     getJSON("finalproject.json").then(function(data) {
         console.log('test');
@@ -63,7 +62,6 @@ function homepage(){
         });
     });
 };
-
 function impact(){
     getJSON("finalproject.json").then(function(data) {
         console.log('test');
@@ -89,7 +87,6 @@ function impact(){
         });
     });
 };
-
 function statistics(){
     getJSON("finalproject.json").then(function(data) {
         console.log('test');
@@ -103,6 +100,22 @@ function statistics(){
             history.innerHTML = '"'  + val.history + '"';
             listItem.appendChild(history);
             statisticsElement.appendChild(listItem);
+        });
+    });
+};
+function awareness(){
+    getJSON("finalproject.json").then(function(data) {
+        console.log('test');
+        console.log(data);
+        var awarenessElement = document.getElementById("awareness");
+        data.awareness.forEach(function(val){
+            console.log(val);
+            awarenessElement.innerHTML = '';
+            var listItem = document.createElement('li');
+            var visits = document.createElement('p');
+            visits.innerHTML = '"'  + val.visits + '"';
+            listItem.appendChild(visits);
+            awarenessElement.appendChild(listItem);
         });
     });
 };
